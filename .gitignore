@@ -1,4 +1,25 @@
-./vscode
+.vscode
+*/.vscode
 *.exe
 *.zip
 *.pdf
+
+# https://www.toptal.com/developers/gitignore/
+
+# --- RUST ---- 
+# Ignore the target directory 
+target/
+Cargo.lock
+Cargo.toml
+
+# --- JAVA ---- 
+# Ignore build output directories
+4_java/*/lib
+4_java/*/README.md
+bin/
+build/
+out/
+
+# --- Csharp ---- # Your C# section is fine!
+5_csharp/*
+!5_csharp/*.cs
