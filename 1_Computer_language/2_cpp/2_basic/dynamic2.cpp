@@ -2,10 +2,12 @@
 
 using namespace std;
 
+template <typename T>
 class DynamicArray {
 private:
     unsigned int sz;
-    int *arr;
+    // int *arr;
+    T *arr;
 
 public:
     explicit DynamicArray(int n) : sz(n) {
@@ -39,14 +41,26 @@ public:
         return sz;
     }
 
-    int& operator[](int i) {
+    // int& operator[](int i) {
+    //     if (i < 0 || i >= sz) {
+    //         throw out_of_range("Index out of range");
+    //     }
+    //     return arr[i];
+    // }
+    T& operator[](int i) {
         if (i < 0 || i >= sz) {
             throw out_of_range("Index out of range");
         }
         return arr[i];
     }
 
-    const int& operator[](int i) const {
+    // const int& operator[](int i) const {
+    //     if (i < 0 || i >= sz) {
+    //         throw out_of_range("Index out of range");
+    //     }
+    //     return arr[i];
+    // }
+    const T& operator[](int i) const {
         if (i < 0 || i >= sz) {
             throw out_of_range("Index out of range");
         }
@@ -55,7 +69,7 @@ public:
 };
 
 int main() {
-    DynamicArray da(5);
+    DynamicArray<int> da(5);
     da[0] = 10;
     da[1] = 20;
     da[2] = 30;
