@@ -1,16 +1,28 @@
 #include <iostream>
 #include <vector>
-#include <string> // Include for std::string
+#include <chrono>
 #include <cmath>
+#include <algorithm>
 
 using namespace std;
+
+/*
+
+'chrono' library : can estimate the code calculation with nano second
+release mode is much better
+cml:# g++ -O2 -o *.exe *.cpp
+*/
 
 vector<int> odds() {
     return {1, 3, 5, 7, 9};
 };
 
-int main() {
-    auto a1 = 10;            // int
+
+int main(){
+    auto start = chrono::system_clock::now();   // time point
+
+    // Do something
+        auto a1 = 10;            // int
     auto a2 = 3.14f;         // float
     auto a3 = "hello";       // const char*
     auto a4 = string("hello"); // std::string, better than "hello"s
@@ -38,6 +50,13 @@ int main() {
         cout << s << " ";
     }
     cout<<endl;
+
+
+    //
+
+    auto end = chrono::system_clock::now();
+    auto msec= chrono::duration<double>(end-start).count()*1000;
+    cout << "Elasped time: " << msec << "ms." << endl;
 
     return 0;
 }
