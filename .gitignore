@@ -4,6 +4,10 @@
 *.zip
 *.pdf
 *.sln
+# #################################
+# *.jpg
+# *.png
+# #################################
 # https://www.toptal.com/developers/gitignore/
 
 # --- RUST ---- 
