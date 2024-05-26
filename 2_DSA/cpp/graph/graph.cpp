@@ -3,6 +3,6 @@
 using namespace std;
 
 int main(){
-    cout<< "this is testing the output setting!"<<endl;
+    cout<< "this is testing!"<<endl;
     return 0;
 }
