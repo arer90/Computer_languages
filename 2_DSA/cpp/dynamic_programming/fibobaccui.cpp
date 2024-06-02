@@ -82,9 +82,9 @@ int fibo3(int n){
 
 int main(){
     int n = 10;
-    cout<< fibo1(n) << endl;
-    cout<< fibo2(n) << endl;
-    cout<< fibo3(n) << endl;
+    cout<< fibo1(n) << endl;    // duplicating
+    cout<< fibo2(n) << endl;    // memorization
+    cout<< fibo3(n) << endl;    // tabulation
     
     return 0;
 }
