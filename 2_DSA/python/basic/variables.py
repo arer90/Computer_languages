@@ -6,7 +6,7 @@ for i in range(len(var)):
     print(f"{i} : {var[i]}")
     
 
-dic = {'fruit1':'apple', 'fruit2':'orange'}
+dic = {'fruit1':'apple', 'fruit2':'orange', 'fruit3':'banana'}
 
 for k,v in dic.items():
     print(f'{k} is {v}')
