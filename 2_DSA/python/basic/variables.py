@@ -24,3 +24,8 @@ setNum = {"ai","ai","ai","ai","ai","ml","ml","ml","ml","dl","dl","dl","md"}
 for i,k in enumerate(setNum):
     print(f'{i} = {k}!')
 print('\n')
+
+def print_version(v):
+    return print(f'{v} is a printing test for version!')
+
+print_version(1.1)
