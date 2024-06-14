@@ -29,3 +29,4 @@ def print_version(v):
     return print(f'{v} is a printing test for version!')
 
 print_version(1.1)
+print_version("test1.2")
