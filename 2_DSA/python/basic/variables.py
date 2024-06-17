@@ -31,3 +31,4 @@ def print_version(v):
 print_version(1.1)
 print_version("test1.2")
 print_version("string")
+print_version("8 days left")
